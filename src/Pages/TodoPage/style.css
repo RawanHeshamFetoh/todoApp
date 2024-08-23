@@ -54,3 +54,9 @@
         left: 20px;
     }
 }
+@media (max-width:992px) {
+    .todonote{
+        width: 45% !important;
+        margin-bottom: 50px;
+    }
+}

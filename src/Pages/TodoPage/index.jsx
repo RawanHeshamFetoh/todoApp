@@ -27,11 +27,14 @@ const ToDoPage = () => {
         const newNodes = title.map((item, index) => ({
             id: `node-${index}`,
             position: { x: 0, y: 200 * index },
-            data: { label: item, content: list[index] ,additionalInfo: selectList[index] },
+            data: { label: item, content: list[index] ,additionalInfo: selectList[index] , idx:index },
             type: 'custom',
         }));
         setNodes(newNodes);
     }, [title, list]);
+    // useEffect(() => {
+    //     dispatch(refreshAllComponents());
+    //   }, []);
 
     return ( 
         <div className="to-do-page"      >

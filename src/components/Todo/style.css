@@ -23,6 +23,29 @@
     text-decoration-color:#0000005f ;
     -moz-text-decoration-color:#0000005f ;
 }
+.btns{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.btns button{
+    background-color: transparent;
+    font-size: 22px;
+    border: none;
+    outline: none;
+}
+.delete{
+    color :#A0845B;
+    /* margin-right: 50px ; */
+}
+
+.edit{
+    color :#A3C686;
+}
+button:hover{
+cursor: pointer;
+}
 @media (max-width:1200px) {
     .card{
         width: 150px;
