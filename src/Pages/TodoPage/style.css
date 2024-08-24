@@ -23,6 +23,7 @@
   width: 100%;
     height: 80vh; 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -45,11 +46,12 @@
 .react-flow-to-do-page{
     position: absolute;
     width: 100% !important;
-    height: 90%;
+    height: 78% !important;
     top: -65vh;
     left: 45px;
 }
 @media (max-width:1300px) {
+
     .react-flow-to-do-page{
         left: 20px;
     }
@@ -58,5 +60,22 @@
     .todonote{
         width: 45% !important;
         margin-bottom: 50px;
+    }
+    .todos{
+        height: 200vh;
+    }
+    .react-flow-to-do-page{
+        height: 89% !important;
+    }
+}
+@media (max-width:768px) {
+    .todos{
+        height: 280vh;
+    }
+    .todonote{
+        width: 95% !important;
+    }
+    .react-flow-to-do-page{
+        height: 89% !important;
     }
 }
